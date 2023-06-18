@@ -1,0 +1,9 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}

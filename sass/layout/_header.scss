@@ -1,0 +1,70 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+@use "../components/media";
+
+.hero {
+  margin-bottom: 2rem;
+  .hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .hero__content {
+      .hero__title {
+        text-transform: uppercase;
+        font-size: fonts.$fs-h1;
+        font-family: "Barlow", sans-serif;
+        color: colors.$darkBlue;
+        font-weight: 900;
+      }
+      .hero__description {
+        font-size: fonts.$fs-body;
+        font-family: "Barlow", sans-serif;
+        font-weight: 500;
+        color: colors.$desatBlue;
+        max-width: 400px;
+        margin: 2rem 0;
+        line-height: 1.4;
+      }
+    }
+    .hero__image {
+      display: flex;
+      .hero-img {
+        border-radius: 20px;
+        width: 700px;
+      }
+      .hero-img-pattern {
+        position: absolute;
+        right: -17rem;
+        top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: media.$breakpoint-md) {
+  .hero__container {
+    gap: 50px;
+  }
+  .hero-img {
+    width: 500px;
+  }
+  .hero-img-pattern {
+    display: none;
+  }
+}
+
+@media (max-width: media.$breakpoint-sm) {
+  .hero__container {
+    flex-direction: column;
+    .hero__image {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media (max-width: media.$breakpoint-xs) {
+  .hero__title {
+    font-size: fonts.$fs-xs !important;
+  }
+}

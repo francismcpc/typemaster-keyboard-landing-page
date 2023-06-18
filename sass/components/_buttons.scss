@@ -1,0 +1,46 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+
+.btn {
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.btn__primary {
+  background-color: colors.$darkOrange;
+  color: colors.$white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Barlow", sans-serif;
+
+  &:hover {
+    background-color: colors.$lightOrange;
+    cursor: pointer;
+  }
+}
+.btn__secondary {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Barlow", sans-serif;
+  background-color: colors.$lightBlue;
+  color: colors.$darkBlue;
+
+  &:hover {
+    background-color: colors.$darkBlue;
+    color: colors.$white;
+    cursor: pointer;
+  }
+}
+.btn__transparent {
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Barlow", sans-serif;
+  color: colors.$desatBlue;
+
+  &:hover {
+    color: colors.$darkBlue;
+    cursor: pointer;
+  }
+}

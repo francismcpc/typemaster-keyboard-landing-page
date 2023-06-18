@@ -1,0 +1,16 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+@use "../components/media";
+
+.footer {
+  text-align: center;
+  .footer__copyright {
+    font-size: 1rem;
+    color: colors.$desatBlue;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: media.$breakpoint-md) {
+}

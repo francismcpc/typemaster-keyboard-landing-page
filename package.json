@@ -1,0 +1,17 @@
+{
+  "name": "typemaster-keyborad-landing-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch:sass": "sass --watch sass:css",
+    "start": "concurrently \"npm run dev\" \"npm run watch:sass\""
+  },
+  "devDependencies": {
+    "sass": "^1.63.4",
+    "vite": "^4.3.9"
+  }
+}

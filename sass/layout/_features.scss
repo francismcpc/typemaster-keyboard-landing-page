@@ -1,0 +1,51 @@
+@use "../utils/colors";
+@use "../utils/fonts";
+@use "../components/media";
+
+.features {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 65px;
+  margin-top: 6rem;
+  .feature__icon {
+    padding: 0.875rem;
+    background-color: colors.$darkOrange;
+    border-radius: 10px;
+  }
+  .feature__title {
+    text-transform: uppercase;
+    color: colors.$darkBlue;
+    font-weight: 900;
+    margin: 1.4rem 0;
+  }
+  .feature__description {
+    color: colors.$desatBlue;
+    font-weight: 500;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: media.$breakpoint-md) {
+  .features {
+    grid-template-columns: auto auto;
+    gap: 50px;
+    .feature {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: media.$breakpoint-sm) {
+  .features {
+    grid-template-columns: auto;
+    .feature {
+      display: grid;
+      grid-template-columns: auto;
+      place-items: center;
+      .feature__title,
+      .feature__description {
+        text-align: center;
+      }
+    }
+  }
+}
