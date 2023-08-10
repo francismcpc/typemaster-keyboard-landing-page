@@ -59,4 +59,5 @@ By working on this project, you can learn:
 ## Acknowledgements
 - This project was developed as part of the Frontend Mentor challenges. Special thanks to Frontend Mentor for providing the design and inspiration for this keyboard landing page.
 
-Disclaimer: This project is for educational purposes only. The design and branding elements are provided by Frontend Mentor.
+## Disclaimer: 
+- This project is for educational purposes only. The design and branding elements are provided by Frontend Mentor.
