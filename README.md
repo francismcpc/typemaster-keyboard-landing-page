@@ -17,7 +17,7 @@ The TypeMaster Keyboard Landing Page project is designed to create an engaging l
 
 ## Demo
 
-[Live Demo](https://typemaster-keybard-landing-page.vercel.app/)
+Check out the live demo of the Typemaster Keyboard | Landing Page Design [Live Demo](https://typemaster-keybard-landing-page.vercel.app/)
 
 ## Getting Started
 
